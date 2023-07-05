@@ -26,7 +26,6 @@ export async function POST(request) {
     const doc = {
       course: body.course,
       link: body.link,
-      status: body.status,
     };
     const result = await courses.insertOne(doc);
     return Response.json(
