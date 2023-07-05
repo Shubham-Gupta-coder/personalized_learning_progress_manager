@@ -110,15 +110,15 @@ const page = () => {
         </button>
       </div>
       <h1 className="text-3xl mt-10 mx-10 p-10 text-gray-800 dark:text-gray-300 font-bold">
-        books
+        Books
       </h1>
-      <div className="books flex flex-wrap px-10 mx-5">
+      <div className="books flex flex-wrap px-10 mx-8">
         {!loading ? (
           books.map((book) => {
             return (
               <div
                 key={book._id}
-                className="flex flex-col m-5 w-[300px] min-h-[200px] bg-white border shadow-sm rounded-xl dark:bg-black dark:border-gray-700 dark:shadow-slate-700/[.7]"
+                className="flex flex-col m-2 w-[300px] min-h-[200px] bg-white border shadow-sm rounded-xl dark:bg-black dark:border-gray-700 dark:shadow-slate-700/[.7]"
               >
                 <div className="bg-gray-100 border-b flex items-center justify-between rounded-t-xl py-2 px-4 md:py-3 md:px-5 dark:bg-black dark:border-gray-700">
                   <span className="dark:text-gray-300 text-gray-700">Books</span>
