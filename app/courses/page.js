@@ -135,7 +135,7 @@ const page = () => {
       <h1 className="text-3xl mt-10 mx-10 p-10 text-gray-800 dark:text-gray-300 font-bold">
         Courses
       </h1>
-      <div className="courses flex flex-wrap px-10 py-2 mx-10">
+      <div className="courses flex flex-wrap px-10 mx-5">
         {!loading ? (
           courses.map((course) => {
             console.log(courses);

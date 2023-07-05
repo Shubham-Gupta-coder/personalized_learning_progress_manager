@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 
 export default function RootLayout({ children }) {
-  const [mode, setMode] = useState("dark");
+  const [mode, setMode] = useState("light");
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
