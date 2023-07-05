@@ -11,11 +11,6 @@ export async function POST(request) {
       idea: body.idea,
     };
     const result = await ideas.deleteOne(doc);
-    if (result.deletedCount === 1) {
-      console.log("Successfully deleted one document.");
-    } else {
-      console.log("No documents matched the query. Deleted 0 documents.");
-    }
     return Response.json(result.deletedCount);
   } finally {
     // Ensures that the client will close when you finish/error

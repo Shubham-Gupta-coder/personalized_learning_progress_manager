@@ -17,7 +17,6 @@ const page = () => {
       setLoading(false)
     } catch (error) {
       setLoading(false)
-      console.log(error);
     }
   };
   useEffect(() => {
@@ -138,7 +137,6 @@ const page = () => {
       <div className="courses flex flex-wrap px-10 mx-5">
         {!loading ? (
           courses.map((course) => {
-            console.log(courses);
             return (
               <div
                 key={course._id}
